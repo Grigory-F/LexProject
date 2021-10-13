@@ -1,0 +1,23 @@
+{
+  "name": "lexproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grigory-F/LexProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grigory-F/LexProject/issues"
+  },
+  "homepage": "https://github.com/Grigory-F/LexProject#readme",
+  "dependencies": {
+    "chart.js": "^3.5.1"
+  }
+}

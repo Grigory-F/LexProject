@@ -1,0 +1,41 @@
+.page {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-layout {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F638B;
+    padding: 0 20px;
+}
+.main-content {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.promo-title {
+    text-align: center;
+    color: white;
+    
+}
+.promo-link {max-width: 200px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    color:white;
+    margin-bottom: 10px;
+}
+.promo-link--sign-in {
+    border: 1px solid white;
+    color:white;
+}
+.promo-link--sign-up {
+    background-color: white;
+    color: black;
+}

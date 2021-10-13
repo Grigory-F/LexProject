@@ -1,0 +1,57 @@
+.page {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    height: 100vh;
+    padding: 20px 20px;
+    background-color: #1F638B;
+    display: flex; justify-content: center;
+    
+}
+.container-layout {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    height: min-content;
+}
+.main-content {
+}
+.promo-title {
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: white;
+}
+.input-container {
+    margin-bottom: 10px;
+    
+}
+.label-input {
+    color: rgba(255, 255, 255, 0.5);
+}
+.form-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.text-error {
+    color: transparent;
+    font-size: 14px;
+    &--visible {
+        color: red;
+    }
+}
+.promo-link {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+.promo-link--sign-in {
+}
