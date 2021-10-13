@@ -1,0 +1,39 @@
+.content {
+    padding: 0 20px;
+}
+.title-md {
+}
+.input-container {
+display: flex;
+align-items: center;
+}
+.copy-button {
+    height: 35px;
+    padding: 10px;
+    background-color: rgba(59, 59, 59, 0.1);
+    
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.material-icons {
+}
+.list-link-item {
+
+		&__icon {
+		}
+}
+.description {
+    margin-top: 30px;
+}
+
+input {
+    padding: 10px;
+    flex: 1;
+    border: none;
+}
+.container-desc {
+    margin-top: 20px;
+    max-width: 300px;
+    &
+}
