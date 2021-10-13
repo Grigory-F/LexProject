@@ -87,3 +87,32 @@
         margin: 0 0 0 10px;
     }
 }
+.title-center {
+    text-align: center;
+}
+
+.earnings-info {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-earnings-amount {
+    padding: 5px 10px;
+    background-color: #FFE4E4;
+}
+.earnings-amount {
+    font-size: 18px;
+}
+.material-icons {
+    font-size: 30px;
+    &--up {
+        color: green;
+    }
+    &--down{
+        color: red;
+    }
+    &--no-changes{
+        color: gray;
+    }
+}

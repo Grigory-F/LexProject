@@ -192,3 +192,45 @@
 .list-link-item__link-anchor {
   margin: 0 0 0 10px;
 }
+
+.title-center {
+  text-align: center;
+}
+
+.earnings-info {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-earnings-amount {
+  padding: 5px 10px;
+  background-color: #FFE4E4;
+}
+
+.earnings-amount {
+  font-size: 18px;
+}
+
+.material-icons {
+  font-size: 30px;
+}
+
+.material-icons--up {
+  color: green;
+}
+
+.material-icons--down {
+  color: red;
+}
+
+.material-icons--no-changes {
+  color: gray;
+}
