@@ -38,9 +38,10 @@
     font-size: 18px;
 }
 .text-error {
-    color: transparent;
+    display: none;
     font-size: 14px;
     &--visible {
+        display: block;
         color: red;
     }
 }

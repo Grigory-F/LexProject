@@ -49,11 +49,12 @@
 }
 
 .text-error {
-  color: transparent;
+  display: none;
   font-size: 14px;
 }
 
 .text-error--visible {
+  display: block;
   color: red;
 }
 
