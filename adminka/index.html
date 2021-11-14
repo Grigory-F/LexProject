@@ -34,7 +34,11 @@
             <aside class="sidebar">
                 <div class="sidebar__header">
                     <div class="sidebar__header-title"><span class="sidebar__header-text">BOTPRO</span><span class="sidebar__header-text-part">ADMIN</span></div>
-                    <div class="sidebar__header-button"><span class="material-icons"> notifications </span></div>
+                    <div class="sidebar__header-button sidebar__header-button--active-dot"><span class="material-icons"> notifications </span></div>
+                    <div class="sidebar__header-popup sidebar__header-popup--active">
+                        <p class="sidebar__popup-text">Пришло новых <span>N</span> человек</p>
+                        <p class="sidebar__popup-text">Заплатили <span>N</span> человек</p>
+                    </div>
                 </div>
                 <ul class="sidebar__list-link sidebar-links">
                     <li class="sidebar-links__item">
@@ -132,6 +136,6 @@
                 </div>
             </main>
         </div>
-        <script src=".js" defer></script>
+        <script src="main.js" defer></script>
     </body>
 </html>
