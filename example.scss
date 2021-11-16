@@ -1,0 +1,40 @@
+.page {
+    margin: 0;
+}
+.app {
+    display: flex;
+}
+
+/* Основные стили */
+
+.slider {
+    flex: 1 1 50%;
+    /* width: 600px; */
+
+    overflow-x: scroll;
+
+    background-color: red;
+
+    &__tape {
+        display: flex;
+        /* Отменяет марджин у последнего элемента ленты снизу, чтобы небыло зазора */
+        padding: 10px;
+        margin-right: -10px;
+        width: min-content;
+        box-sizing: border-box;
+        /* background-color: yellow; */
+    }
+
+    &__item {
+        margin-right: 10px;
+    }
+}
+.slide {
+    &:last-child {
+        margin-right: 0;
+    }
+    background-color: blue;
+    padding: 10px;
+    &__icon {
+    }
+}
