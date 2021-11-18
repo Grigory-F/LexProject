@@ -89,7 +89,7 @@
                                 <thead>
                                     <tr>
                                         <th>Header</th>
-                                        <th class="">Header</th>
+                                        <th>Header <span class="table__indicator">+20</span></th>
                                         <th>Header</th>
                                         <th>Header</th>
                                         <th>Header</th>
@@ -99,8 +99,8 @@
                                 <tbody>
                                     <tr>
                                         <td>Header</td>
-                                        <td>Header HeaderHeaderHeader</td>
-                                        <td>Header</td>
+                                        <td>Header HeaderHeaderHeader <span class="table__indicator">NEW</span></td>
+                                        <td>Header <span class="table__indicator">NEW</span></td>
                                         <td>
                                             <div class="table__state-field">
                                                 <span>STATE</span>
@@ -133,7 +133,15 @@
                             </table>
                         </div>
                         <div class="container-informations__container-form">
-                            <p class="container-informations__text-subtitle">adwawd efsfh thydcb</p>
+                            <div class="container-informations__inner-subtitle">
+                                <p class="container-informations__text-subtitle">adwawd efsfh thydcb</p>
+                                <div class="container-informations__box-icon">
+                                    <span class="material-icons help-icon"> help </span>
+                                    <div class="container-informations__explanation popup-explanation">
+                                        <span class="popup-explanation__text">awddawdawaefsf wada ws fsf sf ad adw awds ef eawd awdre re</span>
+                                    </div>
+                                </div>
+                            </div>
                             <form action="#" method="post" class="edit-commands">
                                 <div class="edit-commands__inner-container">
                                     <div class="edit-commands__container">
@@ -141,13 +149,9 @@
                                             <option>Пункт 1</option>
                                             <option>Пункт 2</option>
                                         </select>
-                                        <input type="text" class="edit-commands__input input-forms" placeholder="Замените...">
                                     </div>
                                     <div class="edit-commands__container">
                                         <textarea name="" id="" class="edit-commands__textarea input-forms" placeholder="Описание..."></textarea>
-                                    </div>
-                                    <div class="edit-commands__container">
-                                        <textarea name="" id="" class="edit-commands__textarea input-forms" placeholder="Подсказка попапа..."></textarea>
                                     </div>
                                 </div>
                                 <button class="edit-commands__button-submit">Изменить</button>
