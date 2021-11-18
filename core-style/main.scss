@@ -22,9 +22,9 @@
         padding: 0;
         overflow: hidden;
         height: 0;
-        transition: .3s ease;
+        transition: 0.3s ease;
         &--visible {
-              height: 350px;
+            height: 350px;
         }
     }
 
@@ -96,23 +96,105 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    &__indicator--up {
+        font-size: 25px !important;
+        color: green;
+    }
+    &__indicator--down {
+        font-size: 20px !important;
+        color: red;
+    }
+    &__indicator--square {
+        font-size: 10px !important;
+        margin-left: 5px;
+        color: gray;
+    }
 }
 .container-earnings-amount {
     padding: 5px 10px;
-    background-color: #FFE4E4;
+    background-color: #ffe4e4;
 }
 .earnings-amount {
     font-size: 18px;
 }
-.material-icons {
-    font-size: 30px;
-    &--up {
-        color: green;
+
+.content {
+    &__container {
+        max-width: 500px;
     }
-    &--down{
+
+    &__title {
+    }
+
+    &__subtitle {
+    }
+
+    &__form {
+    }
+
+    &__textarea {
+        resize: none;
+        border: 2px solid black;
+        display: block;
+        height: 250px;
+        outline: none;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    &__submit-button {
+        margin-top: 10px;
+        border: none;
+        background-color: #86ff27;
+        width: 100%;
+        padding: 10px;
+        color: white;
+    }
+    &__inner-input {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    &__input-label {
+        color: 14px;
+    }
+
+    &__input-warn {
         color: red;
+        display: none;
     }
-    &--no-changes{
-        color: gray;
+    &__input {
+        border: 1px solid black;
+        outline: none;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    &__input-warn--active {
+        display: block;
+    }
+}
+.text-warning {
+    display: none;
+    &--active {
+        display: inline-block;
+    }
+}
+.disable-text {
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .content {
+        &__title {
+            text-align: center;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
     }
 }

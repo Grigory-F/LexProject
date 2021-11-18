@@ -19,7 +19,7 @@ function calcutlateSizeSlide(signMath) {
     sizeSlide = containerTape.scrollWidth / boxes.length;
     if (containerTape.scrollWidth > 450) {
         slideCounter++
-        containerTape.style.cssText = `transform: translateX(-${sizeSlide * slideCounter}px)`;
+        containerTape.style.cssText = `transform: translateX(-${64 * slideCounter}px)`;
     }
 
 }

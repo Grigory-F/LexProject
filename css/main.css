@@ -70,10 +70,9 @@
 .bell-button__header-popup {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #FAFAFA;
   top: 50px;
   left: 0;
-  padding: 10px;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   width: 225px;
@@ -84,7 +83,9 @@
 }
 
 .bell-button__popup-text {
-  margin: 0 0 5px 0;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
 
@@ -158,8 +159,8 @@
   padding: 0;
   overflow: hidden;
   height: 0;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .main-nav__list-link--visible {
@@ -249,27 +250,101 @@
           justify-content: center;
 }
 
+.earnings-info__indicator--up {
+  font-size: 25px !important;
+  color: green;
+}
+
+.earnings-info__indicator--down {
+  font-size: 20px !important;
+  color: red;
+}
+
+.earnings-info__indicator--square {
+  font-size: 10px !important;
+  margin-left: 5px;
+  color: gray;
+}
+
 .container-earnings-amount {
   padding: 5px 10px;
-  background-color: #FFE4E4;
+  background-color: #ffe4e4;
 }
 
 .earnings-amount {
   font-size: 18px;
 }
 
-.material-icons {
-  font-size: 30px;
+.content__container {
+  max-width: 500px;
 }
 
-.material-icons--up {
-  color: green;
+.content__textarea {
+  resize: none;
+  border: 2px solid black;
+  display: block;
+  height: 250px;
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
 }
 
-.material-icons--down {
+.content__submit-button {
+  margin-top: 10px;
+  border: none;
+  background-color: #86ff27;
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+
+.content__inner-input {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.content__input-label {
+  color: 14px;
+}
+
+.content__input-warn {
   color: red;
+  display: none;
 }
 
-.material-icons--no-changes {
+.content__input {
+  border: 1px solid black;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content__input-warn--active {
+  display: block;
+}
+
+.text-warning {
+  display: none;
+}
+
+.text-warning--active {
+  display: inline-block;
+}
+
+.disable-text {
   color: gray;
+}
+
+@media (max-width: 768px) {
+  .content__title {
+    text-align: center;
+  }
+  .content__subtitle {
+    text-align: center;
+  }
 }
