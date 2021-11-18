@@ -1,3 +1,6 @@
+@import 'editForm';
+@import 'sidebar';
+
 .page {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,130 +17,21 @@
     overflow-x: hidden;
     display: flex;
 }
-.sidebar {
-    height: 100%;
-    width: 250px;
-    background-color: #383a3d;
-    /* overflow-x: hidden; */
-    transition: width 0.3s ease;
 
-    &__header-popup {
-        display: none;
-        position: absolute;
-        background-color: white;
-        bottom: -60px;
-        right: -200px;
-        padding: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        &--active {
-            display: block;
-        }
-    }
-
-    &__popup-text {
-        margin: 0;
-        font-size: 14px;
-        & span {
-            font-weight: 600;
-        }
-    }
-
-    &__header {
-        height: 60px;
-        padding: 0 20px;
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        justify-content: space-between;
-        position: relative;
-    }
-    &__header-title {
-    }
-
-    &__header-button {
-        padding: 10px;
-        border-radius: 5px;
-        display: flex;
-        flex: 0;
-        z-index: 50;
-        position: relative;
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        & span {
-            color: white;
-            font-size: 23px;
-            margin: auto;
-        }
-        &--active-dot {
-            &::before {
-                content: "";
-                position: absolute;
-                width: 7px;
-                height: 7px;
-                border-radius: 50%;
-                background-color: blue;
-                right: 5px;
-                top: 5px;
-            }
-        }
-    }
-
-    &__header-text {
-        color: #3997d6;
-        margin-right: 10px;
-    }
-
-    &__header-text-part {
-        color: white;
-    }
-
-    &__list-link {
-    }
-}
-
-.sidebar-links {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    &__item {
-    }
-
-    &__link {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: white;
-        padding: 0 20px;
-        height: 50px;
-        box-sizing: border-box;
-        &:hover {
-            border-bottom: 1px solid white;
-            border-top: 1px solid white;
-        }
-    }
-
-    &__text-link {
-        font-size: 18px;
-    }
-}
-
-.icon-link {
-    margin-right: 10px;
-}
 
 .main {
     height: 100%;
-    width: calc(100% - var(--sidebar-opened));
+    min-width: calc(100% - var(--sidebar-closed));
     display: flex;
     flex-direction: column;
+    position: relative;
     z-index: 100;
 }
 .header {
     height: 60px;
     background-color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    
 }
 .content {
     padding: 20px 20px 0 20px;
@@ -212,6 +106,43 @@
     }
 }
 
+
+
+
+
+.edit-commands {
+    &__inner-container {
+        display: flex;
+    }
+
+    &__container {
+        flex: 1 1 33.333%;
+    }
+    &__select {
+        display: block;
+    }
+    &__input {
+        display: block;
+    }
+
+    &__textarea {
+    }
+
+    &__button-submit {
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
     .table {
         min-width: 680px;
@@ -222,82 +153,5 @@
     .content {
         padding: 10px 10px 0 10px;
     }
-    .sidebar {
-        width: 65px;
-        &:hover {
-            width: 250px;
-            .sidebar-links {
-                &__item {
-                }
-
-                &__link {
-                }
-
-                &__text-link {
-                    color: white;
-                }
-            }
-        }
-        &__header {
-        }
-        &__header-title {
-            visibility: hidden;
-        }
-
-        &__header-button {
-            padding: 10px;
-            border-radius: 5px;
-            display: flex;
-            flex: 0;
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-            & span {
-                color: white;
-                font-size: 23px;
-                margin: auto;
-            }
-        }
-
-        &__header-text {
-            color: #3997d6;
-            margin-right: 10px;
-        }
-
-        &__header-text-part {
-            color: white;
-        }
-
-        &__list-link {
-        }
-    }
-
-    .sidebar-links {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
-        &__item {
-        }
-
-        &__link {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            padding: 0 20px;
-            height: 50px;
-            box-sizing: border-box;
-            &:hover {
-                border-bottom: 1px solid white;
-                border-top: 1px solid white;
-            }
-        }
-
-        &__text-link {
-            font-size: 18px;
-            transition: 0.3s ease;
-            color: transparent;
-        }
-    }
+    
 }
