@@ -291,6 +291,26 @@
   display: flex;
 }
 
+.app-float-button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 10px;
+  z-index: 1000;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app-float-button > span {
+  font-size: 30px;
+  margin: auto;
+}
+
 .main {
   height: 100%;
   min-width: calc(100% - var(--sidebar-closed));

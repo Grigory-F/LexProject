@@ -17,6 +17,22 @@
     overflow-x: hidden;
     display: flex;
 }
+.app-float-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    z-index: 1000;
+    border: 1px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    & > span {
+        font-size: 30px;
+        margin: auto;
+    }
+}
+
 
 .main {
     height: 100%;
