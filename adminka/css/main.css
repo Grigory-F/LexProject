@@ -37,6 +37,7 @@
   color: white;
   width: 200px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .input-forms {
@@ -55,8 +56,15 @@
         flex-wrap: wrap;
   }
   .edit-commands__container:last-child {
-    margin-top: 10px;
     height: 100px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edit-commands__container {
+    margin-top: 10px;
+    min-width: 100%;
   }
 }
 

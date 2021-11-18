@@ -30,6 +30,7 @@
         color: white;
         width: 200px;
         margin-top: 20px;
+        cursor: pointer;
     }
 }
 
@@ -48,8 +49,20 @@
             flex-wrap: wrap;
         }
         &__container:last-child {
-            margin-top: 10px;
             height: 100px;
+            margin-top: 10px;
         }
     }
 }
+
+@media (max-width: 480px) {
+    .edit-commands {
+        &__inner-container {
+        }
+        &__container {
+            margin-top: 10px;
+            min-width: 100%;
+        }
+    }
+}
+
