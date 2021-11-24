@@ -3,8 +3,13 @@ document.querySelector(".burger-button").addEventListener("click", () => {
 })
 
 document.querySelector(".bell-button").addEventListener("click", (event) => {
-  event.target.classList.toggle("bell-button--active")
-  document.querySelector(".bell-button__header-popup").classList.toggle("bell-button__header-popup--active")
+  event.target.classList.remove("bell-button--active")
+  let popup = document.querySelector(".bell-button__header-popup")
+  popup.classList.toggle("bell-button__header-popup--active") 
+  setTimeout(() => {
+    popup.classList.toggle("bell-button__header-popup--active")
+  }, 2000);
+  /* popup.style.cssText = "display:none;" */
 });
 
 
