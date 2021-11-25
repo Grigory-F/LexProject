@@ -219,8 +219,8 @@
   height: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: border .3s ease;
-  transition: border .3s ease;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -311,6 +311,17 @@
   width: 100%;
   padding: 10px;
   color: white;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.content__submit-button:hover {
+  background-color: #9ffd56;
+}
+
+.content__submit-button:focus {
+  background-color: #468714;
 }
 
 .content__inner-input {

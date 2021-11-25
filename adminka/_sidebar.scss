@@ -125,11 +125,7 @@
     &:hover {
         width: 250px;
         .sidebar-links {
-            &__item {
-            }
-
-            &__link {
-            }
+            
 
             &__text-link {
                 color: white;
@@ -186,6 +182,43 @@
         padding: 0 20px;
         height: 50px;
         box-sizing: border-box;
+        transition: border 0.3s ease;
+        &:hover {
+            border-bottom: 1px solid white;
+            border-top: 1px solid white;
+            /* background-color: white; */
+        }
+        
+        /* &:hover {
+            background-color: #b9b9b9;
+        }
+        &:focus {
+            background-color: #5e5e5e;
+        } */
+    }
+
+    &__text-link {
+        font-size: 18px;
+        color: transparent;
+        transition: color .3s ease;
+    }
+}
+/* .sidebar-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        padding: 0 20px;
+        height: 50px;
+        box-sizing: border-box;
         &:hover {
             border-bottom: 1px solid white;
             border-top: 1px solid white;
@@ -197,4 +230,4 @@
         transition: 0.3s ease;
         color: transparent;
     }
-}
+} */

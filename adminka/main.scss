@@ -132,17 +132,22 @@
     }
     &__del-button {
         padding: 5px;
-        background-color: #ff000087;
+        background-color: #ff0000d1;
         display: flex;
         border-radius: 5px;
         cursor: pointer;
         width: min-content;
+        border: none;
+        transition: background-color .3s ease;
         & > .material-icons {
             color: white;
             margin: auto;
         }
         &:hover {
-            background-color: red;
+            background-color: #ff000082;
+        }
+        &:focus {
+            background-color: #581010d1;
         }
     }
     &__state-field {

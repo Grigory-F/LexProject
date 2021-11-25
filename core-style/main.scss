@@ -76,11 +76,11 @@
         padding: 0 20px;
         height: 40px;
         box-sizing: border-box;
-        transition: border .3s ease;
+        transition: border 0.3s ease;
         align-items: center;
         border: 1px solid transparent;
         &:hover {
-            background-color: rgba(0, 0, 0, 0.1);;
+            background-color: rgba(0, 0, 0, 0.1);
         }
     }
 
@@ -158,7 +158,16 @@
         width: 100%;
         padding: 10px;
         color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover {
+            background-color: #9ffd56;
+        }
+        &:focus {
+            background-color: #468714;
+        }
     }
+
     &__inner-input {
         width: 100%;
         margin-top: 15px;
